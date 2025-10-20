@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Perigos da Inteligência Artificial — IA Segura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="#">
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#0066ff"/><stop offset="1" stop-color="#00c6ff"/></linearGradient></defs>
+          <rect x="6" y="6" width="36" height="36" rx="8" fill="url(#g)"></rect>
+          <path d="M16 32 L24 18 L32 32 Z" fill="#fff" opacity="0.95"></path>
+        </svg>
+        <span class="brand-text">Perigos IA</span>
+      </a>
+
+      <nav class="nav" id="mainNav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Introdução</a></li>
+          <li><a href="riscos.html">Riscos</a></li>
+          <li><a href="problemas.html">Problemas</a></li>
+          <li><a href="recursos.html">Como parar?</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="menuToggle" class="menu-btn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+      </div>
+    </div>
+
+    <nav id="mobileNav" class="mobile-nav" hidden aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Introdução</a></li>
+        <li><a href="riscos.html">Riscos</a></li>
+        <li><a href="problemas.html">Problemas</a></li>
+        <li><a href="#recursos.html">Recursos</a></li>
+         <li><a href="formulario.html">Formulário</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="introducao" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Os perigos da Inteligência Artificial</h1>
+          <p class="lead">Entenda os riscos que acompanham o avanço da IA e descubra práticas concretas para reduzir danos e garantir responsabilidade.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="riscos.html">Ver riscos</a>
+            <a class="btn ghost" href="#Problemas">Ver os problemas</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 300" class="illustration">
+            <defs>
+              <linearGradient id="illA" x1="0" x2="1"><stop offset="0" stop-color="#00c6ff"/><stop offset="1" stop-color="#0066ff"/></linearGradient>
+            </defs>
+            <rect x="10" y="40" width="380" height="220" rx="18" fill="#f6fbff"/>
+            <g transform="translate(30,60)">
+              <circle cx="120" cy="60" r="36" fill="url(#illA)" opacity="0.95"/>
+              <rect x="10" y="110" width="280" height="10" rx="5" fill="#e6f3ff"/>
+              <rect x="10" y="130" width="180" height="10" rx="5" fill="#e6f3ff"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+      <div class="example-card">
+        <h4>Exemplos reais</h4>
+        <div class="accordion" id="examples">
+          <button class="acc-btn" aria-expanded="false">Deepfakes</button>
+          <div class="acc-panel" hidden><p>Ferramentas de IA (como a mais recente Sona) têm sido usadas para criar vídeos falsos de figuras públicas, 
+            espalhar desinformação e manipular eleições, dificultando a distinção entre o real e o que é feito por IA.</p></div>
+
+          <button class="acc-btn" aria-expanded="false">Falta de regulamentação</button>
+          <div class="acc-panel" hidden><p>O Brasil ainda não tem uma lei específica para IA. Existe um projeto sim, (Projeto de Lei 2.338/2023), mas ainda está em discussão,
+             enquanto isso, empresas podem usar algoritmos sem transparência, o que abre espaço para abusos e falta de responsabilização</p></div>
+
+          <button class="acc-btn" aria-expanded="false">IA na justiça</button>
+          <div class="acc-panel" hidden><p>Algumas iniciativas no Brasil (mas ainda em pequena escala) tentaram usar IA para prever decisões judiciais ou acelerar processos. 
+            Especialistas obviamente alertaram que sem revisão humana, esses sistemas podem reforçar padrões injustos, ignorar leis, e prejudicar o direito à defesa e fazer de uma forma geral um 
+          um processo injusto.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Problemas" class="container guide-section">
+      <h2>Como resolver esses problemas</h2>
+      <div class="guide-grid">
+        <ul class="checklist">
+          <li><strong>Transparência</strong> — Documentar decisões e dados.</li>
+          <li><strong>Supervisão humana</strong> — Pessoas no controle em casos críticos.</li>
+          <li><strong>Auditoria de viés</strong> — Testes e métricas por grupo demográfico.</li>
+          <li><strong>Regulação</strong> — Políticas que protejam direitos hmanos.</li>
+        </ul>
+
+        <div class="tip-box">
+          <h4>Guia rápido para desenvolvedores</h4>
+          <ol>
+            <li>Auditar e limpar dados de treino.</li>
+            <li>Medir impactos diferenciais.</li>
+            <li>Implementar explicabilidade e logs.</li>
+            <li>Oferecer canais de contestação para usuários.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="container resources-section">
+      <h2>Recursos</h2>
+      <div class="resources-grid">
+        <a class="resource" href="#" rel="noopener">Checklist Ético para IA</a>
+        <a class="resource" href="#" rel="noopener">Boas práticas de governança de dados</a>
+        <a class="resource" href="#" rel="noopener">Relatório de impacto social</a>
+      </div>
+
+      <form id="contactForm" class="contact" novalidate>
+        <h3>Fale conosco</h3>
+        <div class="row">
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="row">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="row">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="row actions">
+          <button type="submit" class="btn primary">Enviar</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>© <strong>Perigos IA</strong> — Informação e conscientização</div>
+      <div class="muted">Feito com responsabilidade e consciência social..</div>
+    </div>
+  </footer>
+
+</body>
+</html>

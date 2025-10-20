@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Problemas da IA — IA Segura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="#">
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#0066ff"/><stop offset="1" stop-color="#00c6ff"/></linearGradient></defs>
+          <rect x="6" y="6" width="36" height="36" rx="8" fill="url(#g)"></rect>
+          <path d="M16 32 L24 18 L32 32 Z" fill="#fff" opacity="0.95"></path>
+        </svg>
+        <span class="brand-text">Perigos IA</span>
+      </a>
+
+      <nav class="nav" id="mainNav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Introdução</a></li>
+          <li><a href="riscos.html">Riscos</a></li>
+          <li><a href="problemas.html">Problemas</a></li>
+          <li><a href="recursos.html">Como parar?</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="menuToggle" class="menu-btn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+      </div>
+    </div>
+
+    <nav id="mobileNav" class="mobile-nav" hidden aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Introdução</a></li>
+        <li><a href="riscos.html">Riscos</a></li>
+        <li><a href="problemas.html">Problemas</a></li>
+        <li><a href="recursos.html">Como parar?</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="riscos" class="container cards-section">
+      <h2>Principais problemas</h2>
+      <p class="muted">Por mais que tenha diversas utilidades, ela ainda sim tem seus problemas.</p>
+
+      <div class="cards-grid">
+        <article class="feature-card">
+          <div class="card-icon">🤖</div>
+          <h3>Deepfakes</h3>
+          <p>Ferramentas de IA (como a mais recente Sona) têm sido usadas para criar vídeos falsos de figuras públicas, 
+            espalhar desinformação e manipular eleições, dificultando a distinção entre o real e o que é feito por IA.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="card-icon">⚖️</div>
+          <h3>Falta de regulamentação</h3>
+          <p>O Brasil ainda não tem uma lei específica para IA. Existe um projeto sim, (Projeto de Lei 2.338/2023), mas ainda está em discussão,
+             enquanto isso, empresas podem usar algoritmos sem transparência, o que abre espaço para abusos e falta de responsabilização</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="card-icon">🔍</div>
+          <h3>IA na Justiça</h3>
+          <p>Algumas iniciativas no Brasil (mas ainda em pequena escala) tentaram usar IA para prever decisões judiciais ou acelerar processos. 
+            Especialistas obviamente alertaram que sem revisão humana, esses sistemas podem reforçar padrões injustos, ignorar leis, e prejudicar o direito à defesa e fazer de uma forma geral um 
+          um processo injusto</p>
+        </article>
+      </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>© <strong>Perigos IA</strong> — Informação e conscientização</div>
+      <div class="muted">Feito com responsabilidade e consciência social.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
