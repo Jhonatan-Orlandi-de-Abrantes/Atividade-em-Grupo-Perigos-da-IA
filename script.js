@@ -12,14 +12,6 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-const themeToggle = document.getElementById('themeToggle');
-themeToggle.addEventListener('click', () => {
-  const pressed = themeToggle.getAttribute('aria-pressed') === 'true';
-  themeToggle.setAttribute('aria-pressed', String(!pressed));
-  document.documentElement.toggleAttribute('data-theme-dark');
-  themeToggle.textContent = pressed ? '🌗' : '🌙';
-});
-
 document.querySelectorAll('.acc-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const expanded = btn.getAttribute('aria-expanded') === 'true';
@@ -43,3 +35,4 @@ form.addEventListener('submit', (e) => {
     setTimeout(() => status.textContent = '', 4000);
   }, 900);
 });
+
